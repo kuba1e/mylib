@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>mylib</title>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style-components.css">
+</head>
+<body>
+	<header class="header">
+		<div class="header__logo"><a href="index.html">MYLIB</a></div>
+		<nav class="header__nav">
+			<ul class="header__nav_list">
+				<li class="header__nav_link1"><a href="index-elements.html">Elements</a></li>
+				<li class="header__nav_link2 active_header"><a href="index-components.html">Components</a></li>
+				<li class="header__nav_link3"><a href="#">Layouts</a></li>
+				<li class="header__nav_link4"><a href="#">Drafts</a></li>
+				<li class="header__nav_link5"><a href="#">Documentation</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main class="main">
+		<nav class="main__sidebar_menu">
+				<ul class="main__menu_list">
+					<li class="main__nav_link active"><a href="#shevron_menu">Chevron menu</a></li>
+					<li class="main__nav_link"><a href="#">Dropdown menu</a></li>
+					<li class="main__nav_link"><a href="#">Modal box</a></li>
+					<li class="main__nav_link"><a href="#">allerts</a></li>
+				</ul>
+			</nav>
+			<section>
+				<article>
+				<h2 class="main__tittle">Chevron menu</h2>
+				<div class="main__section_top">
+					<img src="img/info.svg" class="info" alt="info">
+					<ul class="main__section_top_list" >
+					<li>Possible to use on gradient background</li>
+					<li>Easy to use opacity for items background</li>
+					<li>Cross-browser</li>
+					</ul>
+ 				</div>
+				</article>
+
+				<article class="menu gradient" id="shevron_menu">
+					<ul class="menu_list">
+						<li class="menu_list_item">
+						<a class="menu_list_link" href="">ABOUT</a>
+					</li>
+
+					<li class="menu_list_item">
+						<a class="menu_list_link" href="">CAREERS</a>
+					</li>
+
+					<li class="menu_list_item">
+						<a class="menu_list_link" href="">FAQ</a>
+					</li>
+
+					<li class="menu_list_item">
+						<a class="menu_list_link" href="">contact</a>
+					</li>
+				</ul>
+				</article>
+
+				<article class="main__article_middle_wrapper">
+					<p class="main__article_middle_hat_wrapper">html</p>
+					<div class="main__article_middle">
+<pre class="main__article_middle_text">
+&#60;ul class=”list”&#62;
+    &#60;li&#62;&#60;a href=”#”&#62;About&#60;/a&#62;&#60;/li&#62;
+    &#60;li&#62;&#60;a href=”#”&#62;Careers&#60;/a&#62;&#60;/li&#62;
+    &#60;li&#62;&#60;a href=”#”&#62;FAQ&#60;/a&#62;&#60;/li&#62;
+    &#60;li&#62;&#60;a href=”#”&#62;Contact&#60;/a&#62;&#60;/li&#62;
+&#60;/ul&#62;	
+</pre>	
+					</div>
+				</article>
+				<article class="main__article_bottom_wrapper">
+					<p class="main__article_bottom_hat_wrapper">css</p>
+					<div class="main__article_bottom">
+<pre class="main__article_bottom_text">
+div.menu-body-gradient  {
+ height: 96px;
+ padding: 2px 0;
+ background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 127.92%);
+}
+ul.list-gr {
+ margin:0;
+ padding: 0 60px;
+ text-align: right;
+}
+ul.list-gr li {
+ display: inline-block;
+ position: relative;
+ padding: 30px 25px 29px 25px;
+ margin: 0 20px 0 25px;
+ background-color: #ffffff;
+ font-family: Helvetica;
+ font-style: normal;
+ font-weight: normal;
+ font-size: 32px;
+ line-height: 37px;
+}
+ul.list-gr li:hover {
+ opacity: 0.7;
+}
+ul.list-gr li::after {
+ position: absolute;
+ top:0;
+ left: 100%;
+ content: "";
+ width: 0;
+ height: 0;
+ border-style: solid;
+ border-width: 48px 0 48px 25px;
+ border-color: transparent transparent transparent #ffffff;
+}
+ul.list-gr li > a {
+ vertical-align: top;
+ text-decoration: none;
+ color: #000000;
+}
+ul.list-gr li > a::after {
+ position: absolute;
+ left: -25px;
+ top: 0px;
+ content: "";
+ width: 0;
+ height: 0;
+ border-style: solid;
+ border-width: 0 25px 48px 0;
+ border-color: transparent #ffffff transparent transparent;
+}
+ul.list-gr li > a::before {
+ position: absolute;
+ left: -25px;
+ top: 48px;
+ content: "";
+ width: 0;
+ height: 0;
+ border-style: solid;
+ border-width: 0 0 48px 25px;
+ border-color: transparent transparent #ffffff transparent;
+}
+</pre>
+
+						
+					</div>
+					
+				</article>
+			</section>
+	</main>
+</body>
+</html>

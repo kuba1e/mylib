@@ -1,0 +1,350 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+*, 
+* :before, 
+* :after {
+	box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	min-width: 1440px;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+}
+
+.header {
+	display: flex;
+	flex-direction: flex-start;
+	padding: 24px 48px;
+	background: #fff;
+	box-shadow: 0 4px 4px 0 rgba(79, 88, 178, 0.25);
+	position: initial;
+	z-index: 1;
+}
+
+.header__logo a {
+	color: #6a75ca;
+	font: 24px/1.33 Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	padding-right: 165px;
+}
+
+.header__nav_list a {
+	font: 16px/2 Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #131320;
+}
+
+.header__nav_link1 a {
+	padding-right: 47px;
+}
+
+.header__nav_link2 a {
+	padding-right: 49px;
+}
+
+.header__nav_link3 a {
+	padding-right: 44px;
+}
+
+.header__nav_link4 a {
+	padding-right: 50px;
+}
+
+.header__nav_list a:hover {
+	color: #6a75ca;
+}
+
+.header__nav_list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.main {
+	display: flex;
+	flex: 1 0 auto;
+}
+.main__sidebar_menu {
+	display: flex;
+	flex: 1 1 16.7%;
+	background: #6a75ca;
+}
+.main__menu_list {
+	padding: 24px 0 32px 32px;
+	width: 16.7%;
+}
+
+.active_header a {
+	color: #6a75ca;
+}
+
+.main__nav_link a {
+	font: 16px/32px Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	white-space: nowrap;
+	color: #fff;
+	padding: 8px 0 8px 16px;
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.main__nav_link.active a:before,
+.main__nav_link a:hover:before {
+	content: "";
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #fff;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin: -4px 0 0;
+
+}
+
+section {
+	flex: 1 1 83.3%;
+	background: #eff2f8;
+
+}
+.main__tittle {
+	width: 100%;
+	font: 36px/42px Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	padding: 24px 0 23px 48px;
+	border-bottom: 1px solid  #131320;
+  	color: #131320;
+  	margin-bottom: 24px;
+}
+
+
+.main__section_top {
+	width: 1104px;
+	height: 127px;
+	background: #6a75ca;
+	margin: 0 auto 48px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	 --notchSizeX: 50px;
+	 --notchSizeY: 50px;
+    clip-path: 
+    polygon(calc(100% - var(--notchSizeX)) 0, 100% var(--notchSizeY), 100% 100%, 0 100%, 0 0);
+    border-radius: 8px;
+}
+
+.info {
+	padding: 0 32px;
+}
+
+.main__section_top_list li {
+	font: 16px/1.31 Arial, Helvetica, sans-serif;
+	color: #fff;
+
+}
+
+.menu_list {
+	text-align: right;
+}
+
+.menu_list_item {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	margin-right: 50px;
+}
+
+.main__block_tittle {
+	font: 24px/ 32px Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #131320;
+	text-transform: uppercase;
+	border-bottom: 1px solid #131320;
+	width: 1104px;
+	margin: 0 auto 24px;
+}
+
+.main__block_tittle h2 {
+	padding-bottom: 15px;
+}
+
+.main__block_tittles {
+	width: 1104px;
+	margin: 0 auto;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: ##131320;
+
+}
+
+.main__block_tittles h1 {
+	font-size: 54px;
+	line-height: 63px;
+	padding-bottom: 42px;
+}
+
+.main__block_tittles h2 {
+	font-size: 36px;
+	line-height: 42px;
+	padding-bottom: 21px;
+}
+
+.main__block_tittles h3 {
+	font-size: 24px;
+	line-height: 42px;
+	padding-bottom: 21px;
+}
+
+.main__block_tittles h4,h5 {
+	font-size: 16px;
+	line-height: 21px;
+	padding-bottom: 21px;
+}
+
+.main__block_tittles h6 {
+	padding-bottom: 32px;
+}
+
+.main__article_middle_wrapper {
+	 border: 1px solid #4f58b2;
+	 border-radius: 8px;
+	 position: relative;
+	 min-width: 1104px;
+	 max-width: 1104px;
+	 margin: 0 auto 35px;
+	 position: relative;
+}
+
+.main__article_middle_hat_wrapper{
+	text-transform: uppercase;
+	font: 12px/1.75 Arial, Helvetica, sans-serif;
+	color: #ffc806;
+	width: 49px;
+	height: 21px;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+	background: rgba(239, 242, 248, 1);
+	position: absolute;
+	left: 16px;
+	top: -10px;
+
+}
+
+.main__article_middle {
+	width: 1072px;
+	height: 223px;
+	background: #fff;
+	margin: 16px;
+	 --notchSizeX: 50px;
+	 --notchSizeY: 50px;
+    clip-path: 
+    polygon(calc(100% - var(--notchSizeX)) 0, 100% var(--notchSizeY), 100% 100%, 0 100%, 0 0);
+    border-radius: 8px;
+}
+
+.main__article_middle_text {
+	padding: 48px 83px 48px 48px;
+	font: 16px/21px 'Courier Prime', monospace;
+	color: #7d868e;
+}
+
+.main__article_bottom_wrapper {
+	 border: 1px solid #4f58b2;
+	 border-radius: 8px;
+	 position: relative;
+	 min-width: 1104px;
+	 max-width: 1104px;
+	 margin: 0 auto 43px;
+	 position: relative;
+}
+
+.main__article_bottom_hat_wrapper{
+	text-transform: uppercase;
+	font: 12px/21px Arial, Helvetica, sans-serif;
+	color: #ffc806;
+	width: 41px;
+	height: 21px;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+	background: rgba(239, 242, 248, 1);
+	position: absolute;
+	left: 16px;
+	top: -10px;
+
+}
+
+.main__article_bottom {
+	width: 1072px;
+	background: #fff;
+	margin: 16px;
+	 --notchSizeX: 50px;
+	 --notchSizeY: 50px;
+    clip-path: 
+    polygon(calc(100% - var(--notchSizeX)) 0, 100% var(--notchSizeY), 100% 100%, 0 100%, 0 0);
+    border-radius: 8px;
+}
+
+.main__article_bottom_text {
+	padding: 48px 83px 48px 48px;
+	font: 16px 'Courier Prime', monospace;
+	line-height: 21px;
+	color: #7d868e;
+
+}
