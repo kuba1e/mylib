@@ -67,21 +67,20 @@ body {
 }
 .header {
 	display: flex;
-	flex-direction: flex-start;
 	padding: 24px 48px;
 	background: #fff;
 	box-shadow: 0 4px 4px 0 rgba(79, 88, 178, 0.25);
 	position: initial;
 	z-index: 1;
 }
-.header__logo a {
+.header__logo {
 	color: #6a75ca;
-	font: 24px/1.33 Arial, Helvetica, sans-serif;
+	font: 24px/ 32px Arial, Helvetica, sans-serif;
 	font-weight: bold;
 	padding-right: 165px;
 }
 .header__nav_list a {
-	font: 16px/2 Arial, Helvetica, sans-serif;
+	font: 16px/ 2 Arial, Helvetica, sans-serif;
 	font-weight: bold;
 	color: #131320;
 }
@@ -127,7 +126,7 @@ body {
 .main__script_section_right
 {
  	padding: 32px;
-	font: 16px/21px 'Courier Prime', monospace;
+ 	font: 16px/ 21px 'Courier Prime', monospace;
  }
  .main__section_top_left_shadow {
 	 filter: drop-shadow( 0 4px 10px rgba(79, 88, 178, 0.25));
@@ -141,11 +140,10 @@ body {
 }
 .main__section_top_right_shadow {
 	 filter: drop-shadow( 0 4px 10px rgba(79, 88, 178, 0.25));
-	 display: flex;
+	display: flex;
 	 align-items: stretch;
 }
 .main__script_section_left p {
-	font: 16px/21px 'Courier Prime', monospace;
 	padding-bottom: 23.7px;
 }
 .main__script_section_left :last-of-type {
@@ -168,7 +166,6 @@ body {
 }
 .section_box {
 	width: 240px;
-	font: 16px/ 21px 'Courier Prime', monospace ;
 	color: #7d868e;
 	background: #fff;
 	 --notchSizeX: 64px;
